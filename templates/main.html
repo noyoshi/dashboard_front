@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Discord Dashboard</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
+
+    <!-- Bootstrap - Font Awesome -->
+    <!-- <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <!-- Materialize CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+    <!-- Font Awesome -->
+    <script type="text/javascript" defer src="{{ url_for ('static', filename='js/fontawesome-all.js') }} "></script>
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Fonts via Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Mukta+Mahee:800|Noto+Sans|Play:700"
+    rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <!-- <link rel="stylesheet" href="static/sass/main.min.css"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='sass/main.min.css') }}">
+
+
+    <!-- Discord Dashboard Favicon goes here! TODO get one! -->
+    <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png"/> -->
+    <!-- Placeholder ^^ -->
+
+  </head>
+
+  <body>
+
+    <nav class="z-depth-0">
+      <div class="nav-wrapper">
+        <!-- <a class="play txt-white brand-logo right"><b>Discord Dashboard</b></a> -->
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+        <ul id="nav1-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li>
+            <a>
+              <i class="material-icons large txt-white menu-button">
+                dehaze
+              </i>
+            </a>
+          </li>
+      </ul>
+      </div>
+    </nav>
+
+    <br>
+    <div class="container">
+
+      <div class="row greet">
+        <div class="col s12">
+          <span style="flow-text">
+            <h1 class="play">Discord Dashboard</h1>
+            <br>
+            <h5>Real time analytics. Smart summary reports.</h5>
+          </span>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="row">
+
+        <!-- Top List of 3 Icons -->
+        <div class="col s6">
+          <!-- Item 1 -->
+          <!-- <p style="text-align:center;">
+            <i class="material-icons large txt-white">edit</i>
+          </p> -->
+          <!-- <p> <h4> Feature 1 </h4> </p> -->
+          <!-- <p class="section-desc">  Lorem ipsum dolore amet. Nihon saikou. </p> -->
+          <p style="text-align:center;">
+            <a class="btn-large login-btn z-depth-2 hoverable">Signup</a>
+          </p>
+        </div>
+
+        <div class="col s6">
+          <!-- Item 2 -->
+          <!-- <p style="text-align:center;">
+            <i class="material-icons large txt-blue">account_box</i>
+          </p> -->
+          <!-- <p> <h4> Feature 2 </h4> </p> -->
+          <!-- <p class="section-desc">  Lorem ipsum dolore amet. Nihon saikou. </p> -->
+          <p style="text-align:center;">
+            <a class="btn-large use-btn z-depth-2 hoverable">Login</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-robo-grey">
+      <br>
+    <p style="text-align:center;">
+      <img src="ripped_stuff/robo.gif">
+    </p>
+    <br>
+    <footer class="page-footer bg-robo-grey">
+      <div class="fa-1x">
+        <div class="nfooter">
+          Built with
+          <i class="fab fa-python" data-fa-transform="grow-4" style="margin-right: 5px; margin-left: 5px;"></i>
+          <!-- TODO FIX link highlighting -->
+          <a href="http://flask.pocoo.org/" target="_blank">Flask</a>
+          <i class="fab fa-discord" data-fa-transform="grow-4" style="margin-right: 5px; margin-left: 5px;"></i>
+          <a href="https://discordapp.com/developers/docs/intro" target="_blank">
+            Discord API</a>
+          <!-- <img src="static/icons/bootstrap.png" style="width: 20px; height: 20px; opacity: 1;"> -->
+        </div>
+      </div>
+      <br>
+    </footer>
+  </div>
+
+  </body>
+
+</html>
