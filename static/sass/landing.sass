@@ -25,7 +25,7 @@ $discord-green:  #43B581
 $mukta: 'Mukta Mahee', sans-serif
 $noto:  'Noto Sans', sans-serif
 $play:  'Play', sans-serif
-
+$robo:  'Roboto', sans-serif
 
 /* +++ Fonts +++ */
 
@@ -40,13 +40,16 @@ $play:  'Play', sans-serif
 .play
   font-family: $play
 
+.robo
+  font-family: $robo
+
 
 /* +++ Backgrounds +++ */
 
 // $bg-grey: bg_grey !default
 //
 // @for $i from 0 through 6
-//   .#{$bg-grey}-#$i
+//   .#{$bg-grey-#$i
 //     background-color: $grey-($i)
 
 .bg-button-blue
@@ -186,25 +189,48 @@ body, html
   background-position: 50% 50%
   background-repeat: no-repeat
 
+/* +++ TITLE +++ */
+.title_input
+    position: absolute
+    z-index: 5
+    top: 17%
+    right: 30%
+    left: 30%
+    margin: 0  auto
+
+.title_text
+  text-align: center
+
+.title_inner
+  padding: 0 2rem
+  color: white
+  text-transform: uppercase
+  font-family: $robo
+  font-size: 65px
+  font-weight: 100
 
 
+/* +++ Search +++ */
+/* from https://bootsnipp.com/snippets/EkWmP */
+
+.main_input
+    position: absolute
+    z-index: 5
+    top: 45%
+    right: 30%
+    left: 30%
+    margin: 0  auto
+
+.main_text
+  text-align: center
+  font-family: $robo
+  font-style: normal
+.roboto
+  font-family: $robo
+  font-size: 50px
 
 
-/* +++ Login/Submit? +++ */
-
-%btn-large
-  width: 70%
-
-.login-btn
-  @extend %btn-large
-  background-color: $discord-green
-
-.login-btn:hover
-  background-color: $discord-green
-
-.use-btn
-  @extend %btn-large
-  background-color: $grey-0
-
-.use-btn:hover
-  background-color: $grey-0
+.main_inner
+  padding: 0 2rem
+  color: white
+  text-transform: uppercase
