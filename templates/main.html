@@ -31,6 +31,10 @@
     <!-- <link rel="stylesheet" href="static/sass/main.min.css"> -->
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='sass/main.min.css') }}">
 
+    <!-- Particle JS Style Sheet -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+
 
     <!-- Discord Dashboard Favicon goes here! TODO get one! -->
     <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png"/> -->
@@ -140,6 +144,7 @@
 
   </body>
 
+
   <!-- Need to load in jQuery before Materialze -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -152,4 +157,10 @@
     $('.modal').modal();
   });
   </script>
+
+  <!-- Particles JS -->
+  <script type="text/javascript" defer src="{{ url_for ('static', filename='js/app.js') }} "></script>
+  <script type="text/javascript" defer src="{{ url_for ('static', filename='js/particles.min.js') }} "></script>
+
+
 </html>
