@@ -3,6 +3,7 @@
   <head>
     <title>Discord Dashboard</title>
     <meta charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <!-- Materialize CSS -->
     <!-- Compiled and minified CSS -->
@@ -31,27 +32,38 @@
   </head>
   <body id="particles-js">
 
-    <div class="row" >
-      <div class="title_input">
+      <div class="title_main">
         <div class="title_text">
           <span class="title_inner">
-              Discord Dashboard
+            Discord  Dashboard
+          </span>
+        </div>
+    </div>
+
+    <!-- Use Flask to fill in the POST url here -->
+    <!-- <form action="http://dsg1.crc.nd.edu:5001/cse30246/discorddashboard/" method="POST"> -->
+    <form action="http://127.0.0.1:5000/" method="POST">
+        <div class="main_input">
+          <div class="main_text flow-text">
+            <input placeholder="Search by Server or Username" id="searching" type="text">
+          </div>
+        </div>
+    </form>
+
+      <div class="main_footer">
+        <div class="title_text">
+          <span class="footer_inner">
+            Built with
+            <i class="fab fa-python" data-fa-transform="grow-4" style="margin-right: 5px; margin-left: 5px;"></i>
+            <!-- TODO FIX link highlighting -->
+            <a href="http://flask.pocoo.org/" target="_blank">Flask</a>
+            <i class="fab fa-discord" data-fa-transform="grow-4" style="margin-right: 5px; margin-left: 5px;"></i>
+            <a href="https://discordapp.com/developers/docs/intro" target="_blank">
+              Discord API</a>
           </span>
         </div>
       </div>
-    </div>
 
-    <form class="col s12">
-      <div class="row" >
-        <div class="main_input">
-          <div class="main_text">
-            <span class="main_inner">
-              <input placeholder="Search by Server or Username" id="searching" type="text">
-            </span>
-          </div>
-        </div>
-      </div>
-    </form>
 
   </body>
 
@@ -62,7 +74,7 @@
   <!-- Compiled and minified Materialze JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  <script>
+  <script type="text/javascript">
   $(document).ready(function(){
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
@@ -74,8 +86,8 @@
   </script>
 
   <!-- Particles JS -->
-  <script type="text/javascript" defer src="{{ url_for ('static', filename='js/particles.js') }} "></script>
+  <script type="text/javascript" src="{{ url_for ('static', filename='js/particles.js') }} "></script>
 
-  <script type="text/javascript" defer src="{{ url_for ('static', filename='js/app.js') }} "></script>
+  <script type="text/javascript" src="{{ url_for ('static', filename='js/app.js') }} "></script>
 
 </html>
